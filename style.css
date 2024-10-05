@@ -1,0 +1,464 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body transition */
+body {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Slide-in effect for specific sections */
+section {
+    transform: translateY(50px); /* Move the element down by 50px initially */
+    opacity: 0;
+    animation: slideIn 2s ease-out forwards;
+    animation-delay: 0.5s; /* Delays the animation to create a staggered effect */
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for slide-in */
+@keyframes slideIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow:
+    1px 1px 0px #02AFEF,
+    -1px 1px 0px #02AFEF,
+    1px -1px 0px #02AFEF,
+    -1px -1px 0px#02AFEF;
+}
+
+nav ul li a:hover{
+    text-shadow:
+    1px 1px 0px white,
+    -1px 1px 0px white,
+    1px -1px 0px white,
+    -1px -1px 0px white;
+    color: #02AFEF;
+    transition: 0.2s;
+}
+
+.logoslika{
+    width: 20%;
+}
+
+.hero {
+    background: url('telo.jpg') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    text-shadow:
+    1px 1px 0px #02AFEF,
+    -1px 1px 0px #02AFEF,
+    1px -1px 0px #02AFEF,
+    -1px -1px 0px#02AFEF;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #02AFEF, #018CD0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background: linear-gradient(135deg, #018CD0, #02AFEF);
+    transform: scale(1.05);
+}
+
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card-strategy {
+    background-image: url("puzzle.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    color: white;
+    text-shadow:
+    1px 1px 0px black,
+    -1px 1px 0px black,
+    1px -1px 0px black,
+    -1px -1px 0px black;
+}
+
+.service-card-marketing {
+    background-image: url("social-media.png");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    color: white;
+    text-shadow:
+    1px 1px 0px black,
+    -1px 1px 0px black,
+    1px -1px 0px black,
+    -1px -1px 0px black;
+}
+
+.service-card-monetization {
+    background-image: url("money.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    color: white;
+    text-shadow:
+    1px 1px 0px black,
+    -1px 1px 0px black,
+    1px -1px 0px black,
+    -1px -1px 0px black;
+}
+
+.service-card-analytics {
+    background-image: url("analytics.png");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    color: white;
+    text-shadow:
+    1px 1px 0px black,
+    -1px 1px 0px black,
+    1px -1px 0px black,
+    -1px -1px 0px black;
+}
+
+.service-card-support {
+    background-image: url("support.png");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    color: white;
+    text-shadow:
+    1px 1px 0px black,
+    -1px 1px 0px black,
+    1px -1px 0px black,
+    -1px -1px 0px black;
+
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column; /* Stack the cards */
+        align-items: center;
+    }
+
+    .service-card-strategy, 
+    .service-card-marketing, 
+    .service-card-monetization, 
+    .service-card-analytics, 
+    .service-card-support {
+        width: 100%; /* Full width for phone screens */
+        margin-bottom: 20px; /* Add space between cards */
+    }
+}
+
+.about-container {
+    background: rgb(2,175,239);
+    background: linear-gradient(180deg, rgba(2,175,239,1) 0%, rgba(1,140,208,1) 100%);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+    display: flex;
+    flex-direction: column; /* Column direction to keep the title above the sections */
+    align-items: center;
+    gap: 20px; /* Space between the sections and title */
+    text-align: center;
+}
+
+.about-container h1{
+    text-shadow: none;
+}
+
+/* Sectio n container for side-by-side layout */
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit the width of the content */
+}
+
+/* Individual section styling */
+.about {
+    flex: 1; /* Allow sections to grow equally */
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+.about-container h1{
+    font-size: xx-large;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+button:hover {
+    background: linear-gradient(135deg,#02AFEF, #018CD0) ;
+    transform: scale(1.05);
+    color: white;
+}
+
+.parallax {
+    background-image: url('guza.jpg');
+    height: 50vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.why{
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.why h1{
+    font-size: xx-large;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #ddd;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+.faq-answer p {
+    margin: 0;
+    padding: 10px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Adjust based on answer content */
+}
+
+
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+    border: #018CD0;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #02AFEF, #018CD0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.contact button:hover {
+    background: linear-gradient(135deg, #018CD0, #02AFEF);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: rgb(2,175,239);
+    background: linear-gradient(180deg, rgba(2,175,239,1) 0%, rgba(1,140,208,1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
