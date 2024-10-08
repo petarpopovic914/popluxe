@@ -255,9 +255,52 @@ nav ul li a:hover{
     font-size: 1rem;
 }
 
+/* Media query for phones and smaller devices */
 @media (max-width: 768px) {
+    /* General body text and font size adjustments for readability on smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* Logo scaling */
+    .logoslika {
+        width: 60%; /* Adjust logo size for small screens */
+    }
+
+    /* Navigation */
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    nav ul li a {
+        font-size: 1rem; /* Slightly smaller text for mobile */
+    }
+
+    /* Hero section */
+    .hero {
+        height: 50vh; /* Adjust height for smaller screens */
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Service cards stacking on smaller screens */
     .service-cards {
-        flex-direction: column; /* Stack the cards */
+        flex-direction: column;
         align-items: center;
     }
 
@@ -269,7 +312,39 @@ nav ul li a:hover{
         width: 100%; /* Full width for phone screens */
         margin-bottom: 20px; /* Add space between cards */
     }
+
+    /* About section */
+    .about-container {
+        padding: 10px;
+        text-align: center;
+    }
+    .about-container h1 {
+        font-size: 1.8rem; /* Adjust font size */
+    }
+    .about-container p {
+        font-size: 1rem;
+    }
+
+    /* FAQ section */
+    .faq-section h1 {
+        font-size: 1.5rem;
+    }
+    .faq-item button {
+        font-size: 1rem;
+    }
+
+    /* Contact icons scaling */
+    .contact a img {
+        width: 8%; /* Adjust icon size for phones */
+        margin: 10px 2%;
+    }
+
+    /* Footer adjustments */
+    footer p {
+        font-size: 0.8rem; /* Smaller text for the footer */
+    }
 }
+
 
 .about-container {
     background: rgb(2,175,239);
