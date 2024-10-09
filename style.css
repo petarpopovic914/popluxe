@@ -422,6 +422,7 @@ button:hover {
 
 .faq-question:hover {
     background-color: #ddd;
+    transition: 0.5s;
 }
 
 .faq-answer {
