@@ -483,8 +483,7 @@ button:hover {
     text-decoration: none;
 }
 
-.contact button:hover {
-    background: linear-gradient(135deg, #018CD0, #02AFEF);
+.contact a:hover {
     transform: scale(1.05);
 }
 
