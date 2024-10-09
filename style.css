@@ -491,10 +491,6 @@ button:hover {
     transform: scale(1.1); /* Zooms the image to 110% */
 }
 
-.contact a:hover {
-    transform: scale(1.05);
-}
-
 /* Footer */
 footer {
     background: rgb(2,175,239);
