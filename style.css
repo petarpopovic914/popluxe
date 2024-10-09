@@ -135,12 +135,10 @@ nav ul li a:hover{
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
     text-decoration: none;
 }
 
 .hero .btn:hover {
-    background: linear-gradient(135deg, #018CD0, #02AFEF);
     transform: scale(1.05);
 }
 
