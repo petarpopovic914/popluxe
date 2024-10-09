@@ -136,11 +136,12 @@ nav ul li a:hover{
     cursor: pointer;
     text-decoration: none;
     background: white;
-    transform: scale(1.05);
+    color: black;
 }
 
 .hero .btn:hover {
     background: linear-gradient(135deg, #02AFEF, #018CD0);
+    transform: scale(1.05);
 }
 
 .services {
