@@ -147,21 +147,21 @@ nav ul li a:hover{
 .services {
     text-align: center;
     padding: 20px;
-  }
+}
   
-  .scroll-container {
+.scroll-container {
     height: 100vh; /* Full height of viewport */
     scroll-snap-type: y mandatory; /* Vertical snap scrolling */
     overflow-y: scroll; /* Enable vertical scrolling */
     scrollbar-width: none; /* Hide scrollbar in Firefox */
     -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
-  }
+}
   
-  .service-cards::-webkit-scrollbar {
+.service-cards::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Chrome/Safari */
-  }
+}
   
-  .service-cards {
+.service-cards {
     display: flex;
     flex-direction: column; /* Stack the cards vertically */
     align-items: center;    /* Center the cards horizontally */
@@ -195,44 +195,40 @@ nav ul li a:hover{
     }
 }
   
-  .service-card:nth-child(odd) {
+.service-card:nth-child(odd) {
     background: #02AFEF;
-  }
+}
   
-  .service-card h3 {
+.service-card h3 {
     margin-bottom: 10px;
     font-size: 24px;
-  }
+}
   
-  .service-card p {
+.service-card p {
     width: 80%;
     text-align: left;
     margin: 0 auto;
-  }
+}
   
-  .service-card p strong {
+.service-card p strong {
     font-weight: bold;
-  }
-  
-  /* Make cards visible with fade and slide animations */
-  .service-card.show {
+}
+
+.service-card.show {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 
-/* Media query for phones and smaller devices */
 @media (max-width: 768px) {
-    /* General body text and font size adjustments for readability on smaller screens */
     body {
         font-size: 14px;
     }
 
-    /* Logo scaling */
     .logoslika {
-        width: 60%; /* Adjust logo size for small screens */
+        width: 60%;
     }
 
-    /* Navigation */
+
     nav ul {
         flex-direction: column;
         padding: 0;
@@ -241,12 +237,12 @@ nav ul li a:hover{
         margin: 10px 0;
     }
     nav ul li a {
-        font-size: 1rem; /* Slightly smaller text for mobile */
+        font-size: 1rem;
     }
 
     /* Hero section */
     .hero {
-        height: 50vh; /* Adjust height for smaller screens */
+        height: 50vh;
         text-align: center;
     }
 
@@ -263,7 +259,6 @@ nav ul li a:hover{
         padding: 10px 20px;
     }
 
-    /* Service cards stacking on smaller screens */
     .service-cards {
         flex-direction: column;
         align-items: center;
@@ -274,23 +269,23 @@ nav ul li a:hover{
     .service-card-monetization, 
     .service-card-analytics, 
     .service-card-support {
-        width: 100%; /* Full width for phone screens */
-        margin-bottom: 20px; /* Add space between cards */
+        width: 100%;
+        margin-bottom: 20px;
     }
 
-    /* About section */
+
     .about-container {
         padding: 10px;
         text-align: center;
     }
     .about-container h1 {
-        font-size: 1.8rem; /* Adjust font size */
+        font-size: 1.8rem;
     }
     .about-container p {
         font-size: 1rem;
     }
 
-    /* FAQ section */
+    
     .faq-section h1 {
         font-size: 1.5rem;
     }
@@ -298,15 +293,15 @@ nav ul li a:hover{
         font-size: 1rem;
     }
 
-    /* Contact icons scaling */
+    
     .contact a img {
-        width: 8%; /* Adjust icon size for phones */
+        width: 8%;
         margin: 10px 2%;
     }
 
-    /* Footer adjustments */
+    
     footer p {
-        font-size: 0.8rem; /* Smaller text for the footer */
+        font-size: 0.8rem;
     }
 }
 
@@ -318,9 +313,9 @@ nav ul li a:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: black;
     display: flex;
-    flex-direction: column; /* Column direction to keep the title above the sections */
+    flex-direction: column;
     align-items: center;
-    gap: 20px; /* Space between the sections and title */
+    gap: 20px;
     text-align: center;
 }
 
@@ -328,18 +323,18 @@ nav ul li a:hover{
     text-shadow: none;
 }
 
-/* Sectio n container for side-by-side layout */
+
 .section-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    width: 100%; /* Full width */
-    max-width: 1200px; /* Limit the width of the content */
+    width: 100%;
+    max-width: 1200px;
 }
 
-/* Individual section styling */
+
 .about {
-    flex: 1; /* Allow sections to grow equally */
+    flex: 1;
     padding: 20px;
     background-color: #f7f7f7;
     border-radius: 8px;
@@ -441,7 +436,7 @@ button:hover {
 }
 
 .faq-item.active .faq-answer {
-    max-height: 200px; /* Adjust based on answer content */
+    max-height: 200px;
 }
 
 
