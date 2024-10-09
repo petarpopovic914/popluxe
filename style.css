@@ -483,6 +483,14 @@ button:hover {
     text-decoration: none;
 }
 
+.contact img {
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+
+.contact img:hover {
+    transform: scale(1.1); /* Zooms the image to 110% */
+}
+
 .contact a:hover {
     transform: scale(1.05);
 }
