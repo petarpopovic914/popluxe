@@ -142,7 +142,7 @@ nav ul li a:hover{
 
 .hero .btn:hover {
     background: linear-gradient(135deg, #02AFEF, #018CD0);
-    transition: scale(1.05);
+    transition: 0.3s;
 }
 
 .services {
