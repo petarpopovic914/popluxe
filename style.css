@@ -428,7 +428,7 @@ button:hover {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.7s ease;
     padding-left: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
