@@ -138,11 +138,13 @@ nav ul li a:hover{
     text-decoration: none;
     background: white;
     color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+    transition: transform 0.3s;
 }
 
 .hero .btn:hover {
     background: linear-gradient(135deg, #02AFEF, #018CD0);
-    transition: 0.3s;
+    transform: scale(1.05);
 }
 
 .services {
