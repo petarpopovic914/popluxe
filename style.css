@@ -131,15 +131,16 @@ nav ul li a:hover{
     font-size: 1.2em;
     font-family: 'Poppins', sans-serif;
     color: white;
-    background: linear-gradient(135deg, #02AFEF, #018CD0);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
+    background: white;
+    transform: scale(1.05);
 }
 
 .hero .btn:hover {
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #02AFEF, #018CD0);
 }
 
 .services {
